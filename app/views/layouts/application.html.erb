@@ -10,6 +10,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <nav>
+    <%= link_to "Home", root_path %>
+    <%= link_to "About", about_path %>
+    <%= link_to "Gallery", gallery_path %>
+    <%= link_to "Contact", contact_path %>
+  </nav>
+
   <body>
     <%= yield %>
   </body>
