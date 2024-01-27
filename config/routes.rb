@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   get '/gallery', to: 'pages#gallery'
   get '/contact', to: 'pages#contact'
+  get 'cubed/:num', to: 'main#cubed'
+  get 'evenly/:num1/:num2', to: 'main#evenly'
+  get 'palindrome/:string', to: 'main#palindrome'
+  get 'random/:num1/:num2', to: 'main#random'
+  get 'madlib/:adjective1/:adverb1/:verb/:adverb2/:adjective2', to: 'main#madlib'
 end
