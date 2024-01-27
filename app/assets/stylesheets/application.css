@@ -1,15 +1,149 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #6a397b;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #6a397b;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Background */
+.hero-section {
+    background: url('/assets/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-button {
+    background-color: #6a397b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Gallery */
+.image-gallery .gallery-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.image-gallery .gallery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-right: 15px;
+}
+
+.gallery-img {
+    width: 100%; 
+    max-width: 250px; 
+    height: 300px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.description {
+    flex-grow: 1;
+}
+
+/* About */
+.about-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.about-text {
+    text-align: justify; 
+    margin-bottom: 20px; 
+}
+
+.centered-img {
+    display: block;
+    margin: 20px auto; 
+    max-width: 100%; 
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Contact */
+.contact-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #6a397b;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 15px;
+    }
+
+    .image-gallery {
+        justify-content: center;
+    }
+
+    .gallery-item {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
